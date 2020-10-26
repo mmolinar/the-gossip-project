@@ -17,4 +17,9 @@ class StaticPagesController < ApplicationController
   def show
     @goss_id = Gossip.find(params['id'])
   end
+
+  def user_show
+    @usr = User.find(params['id'])
+  end
+
 end

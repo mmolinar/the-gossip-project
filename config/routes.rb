@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/:id', to: 'static_pages#user_show'
   get 'gossips/:id', to: 'static_pages#show'
   get 'welcome/:first_name', to: 'static_pages#home'
   get 'contact', to: 'static_pages#contact'

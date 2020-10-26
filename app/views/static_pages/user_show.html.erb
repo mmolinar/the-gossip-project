@@ -1,0 +1,16 @@
+<div class="container-fluid text-center">
+    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+      <main role="main" class="inner cover">
+        <h1>
+            <%= gravatar_for(@usr) %>
+            <%= @usr.first_name %>
+            <%= @usr.last_name %>
+            , <%= @usr.age %> years
+            <br>
+            <%= @usr.email %>
+        </h1>
+      </main>
+      <footer class="mastfoot mt-auto">
+      </footer>
+    </div>
+</div>
