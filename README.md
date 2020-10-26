@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Little Rails project of microposts and users. 
 
-Things you may want to cover:
+* Ruby '2.7.1'
 
-* Ruby version
+* Create database with rails db:create
 
-* System dependencies
+* Then initialize db with rails db:migrate
 
-* Configuration
+We used Bootstrap for the CSS.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Created by Nicolas VERON and Maria MOLINAR
