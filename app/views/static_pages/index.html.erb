@@ -1,6 +1,15 @@
-<h1>StaticPages#index</h1>
-<p>Find me in app/views/static_pages/index.html.erb</p>
-
-<% @goss.each_with_index do |gossip, i| %>
-        <li>Le potin de <%= link_to gossip.user.first_name, "/gossips/#{gossip.id}" %></li>
-<% end %></br>
+<div class="container">
+        <div class="row">
+                <div class="card-deck col-md-8 mx-auto">
+                        <% @goss.each_with_index do |gossip, i| %>
+                                <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Le potin de <%= gossip.user.first_name%></h5>
+                                                <p class="card-text"><%= gossip.content%></p>
+                                                <%= link_to gossip.title, "/gossips/#{gossip.id}" %>
+                                        </div>
+                                </div>
+                        <% end %></br>
+                </div>
+        </div>
+</div>

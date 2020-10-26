@@ -1,8 +1,10 @@
 <body class="text-center">
     <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Bienvenue <%= @goss_id.content%>! </h1>
-        <p class="lead"> Ici c'est notre super site de potins, il est chouette, non ?</p>
+        
+        <p class="lead"> My gossip title: <%= @goss_id.title%> </p>
+        <p class="lead"> My gossip content: <%= @goss_id.content%> </p><br><br>
+        <p class="lead"> My gossip user: <%= @goss_id.user.first_name%> <%= @goss_id.user.last_name%></p>
       </main>
       <footer class="mastfoot mt-auto">
       </footer>
