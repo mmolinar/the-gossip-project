@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/:first_name', to: 'static_pages#home'
+  get 'welcome/:first_name', to: 'static_pages#home'
   get 'contact', to: 'static_pages#contact'
   get '/', to: 'static_pages#index'
   get 'team', to: 'static_pages#team'
