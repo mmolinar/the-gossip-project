@@ -1,15 +1,15 @@
 <div class="container">
         <div class="row">
-                <div class="card-deck col-md-8 mx-auto">
-                        <% @goss.each_with_index do |gossip, i| %>
-                                <div class="card" style="width: 18rem;">
-                                        <div class="card-body">
-                                                <h5 class="card-title">Le potin de <%= gossip.user.first_name%></h5>
-                                                <p class="card-text"><%= gossip.content%></p>
-                                                <%= link_to gossip.title, "/gossips/#{gossip.id}" %>
-                                        </div>
-                                </div>
-                        <% end %></br>
-                </div>
+                <% @goss.each_slice(3) do |gossip, i| %>
+                        <div class="card-deck col-md-8 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Le potin de <%= gossip.user.first_name%></h5>
+                        <p class="card-text"><%= gossip.content%></p>
+                        <%= link_to gossip.title, "/gossips/#{gossip.id}" %>
+                        </div>
+                        </div>
+                        </div>
+                <% end %>
         </div>
 </div>
