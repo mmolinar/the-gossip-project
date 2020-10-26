@@ -1,13 +1,11 @@
 <div class="container-fluid text-center">
     <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
-      <main role="main" class="inner cover">
-        
-        <h1 class="display-5"> My gossip title: <%= @goss_id.title%> </h1>
-        <p class="lead"> My gossip content: <%= @goss_id.content%> </p><br><br>
-        <p class="lead"> My gossip user: <%= @goss_id.user.first_name%> <%= @goss_id.user.last_name%></p>
-        <p> <%= link_to @goss_id.user.first_name, "/users/#{@goss_id.user.id}" %> </p>
-      </main>
-      <footer class="mastfoot mt-auto">
-      </footer>
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="display-5"> My gossip title: <%= @goss_id.title%> </h1>
+            <p class="lead"> My gossip content: <%= @goss_id.content%> </p><br><br>
+            <p class="lead"> Written by user: <%= link_to @goss_id.user.first_name, "/users/#{@goss_id.user.id}" %>
+            </div>
+        </div>
     </div>
 </div>
