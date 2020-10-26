@@ -13,4 +13,8 @@ class StaticPagesController < ApplicationController
 
   def team
   end
+
+  def show
+    @goss_id = Gossip.find(params['id'])
+  end
 end
