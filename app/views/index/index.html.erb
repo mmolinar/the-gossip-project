@@ -1,6 +1,13 @@
 <html>
   <head>
     <title>The Gossip Project</title>
+    <h1>The Gossip Project</h1>
   </head>
+  <body>
+  <p> ici > 
+  <% @goss.each_with_index do |gossip, i| %>
+		<li>Le potin de <%= gossip.title %></li><br><br>
+	  <% end %></br>
+  </body>
 
 </html>
