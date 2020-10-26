@@ -2,5 +2,5 @@
 <p>Find me in app/views/static_pages/index.html.erb</p>
 
 <% @goss.each_with_index do |gossip, i| %>
-		<li>Le potin de <%= link_to gossip.title, "#"%> </a></li>
+        <li>Le potin de <%= link_to gossip.user.first_name, "#" %></li>
 <% end %></br>
