@@ -1,0 +1,18 @@
+<div class="container">
+        <div class="row message">
+                <% @gossip.each_slice(4) do |gossip| %>
+                        <div class="card-deck message">
+                        <% gossip.each do |gossip| %>
+                                <div class="card shadow-sm">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Le potin de <%= gossip.user.first_name%></h5>
+                                                <p class="card-text"><%= gossip.content%></p>
+                                        <%= link_to gossip.title, "/gossips/#{gossip.id}" %>
+                                        </div>
+                                </div>
+                        <% end %>
+                        </div>
+                <% end %>
+        </div>
+</div>
+
